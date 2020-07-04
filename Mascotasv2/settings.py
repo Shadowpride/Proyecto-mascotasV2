@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Mascotasv2.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['Mascotasv2/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

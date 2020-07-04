@@ -15,10 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import Home
-
+from Mascotasv2 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/home', Home.as_view(), name='my-view'),
+    path('', views.hola, name='hola'),
 ]
