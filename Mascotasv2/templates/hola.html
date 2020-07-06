@@ -1,5 +1,4 @@
-
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -11,12 +10,60 @@
 
 <body>
 
+    <div>
 
-
-    <div class="alert alert-primary" role="alert">
-        A simple primary alert—check it out!
+        <nav class="navbar bg-dark justify-content-end text-white">
+            Login
+        </nav>
+        
+        <nav class="navbar sticky-top navbar-light bg-light">
+            <a class="navbar-brand" href="#">Mascotas Perdidas</a>
+        </nav>
+    
     </div>
 
+    <div>
+        <button type="button" class="btn btn-outline-success">Mascotas Encontradas</button>
+        <button type="button" class="btn btn-outline-info">Mascotas Perdidas</button>
+
+
+    </div>
+    <div>
+        <img src="{% static 'img/logo.PNG' %}" class="img-fluid" alt="Responsive image">      
+    </div>
+
+    <div class="card-deck ">
+        <div class="card border border-success">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card border-info">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card border border-success">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
 
 
 
