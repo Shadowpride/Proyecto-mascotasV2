@@ -10,29 +10,27 @@
 
 <body>
 
-    <div>
-
-        <nav class="navbar bg-dark justify-content-end text-white">
-            Login
-        </nav>
-        
-        <nav class="navbar sticky-top navbar-light bg-light">
-            <a class="navbar-brand" href="#">Mascotas Perdidas</a>
-        </nav>
-    
-    </div>
-
+  <div class="sticky-top bg-light">
+    <nav class="navbar bg-dark justify-content-end text-white">
+      Login
+    </nav>
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" href="#">Mascotas Perdidas</a>
+    </nav>
     <div class="container mx-auto" style="width: 500px;">
       <button type="button" class="btn btn-outline-info" style="width: 200px;" data-toggle="tooltip" data-placement="bottom" title="Encontraste una mascota?">Mascotas Encontradas</button>
       <button type="button" class="btn btn-outline-success" style="width: 200px;" data-toggle="tooltip" data-placement="bottom" title="Perdiste una mascota?">Mascotas Perdidas</button>
     </div>
+  </div>
 
-    <div class="container">
-          <img src="{% static 'img/logo.PNG' %}" class="img-fluid" alt="">      
-    </div>
+    
+
+  <div class="container">
+    <img src="{% static 'img/logo.PNG' %}" class="img-fluid" alt="">      
+  </div>
 
 
-  <div class="container float-left " style="width: 200px;">
+  <div class="container float-left w-auto p-3">
     <div class="accordion" id="accordionExample">
       <div class="card">
         Filtro
