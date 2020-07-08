@@ -20,4 +20,6 @@ from Mascotasv2 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.Inicio, name='Inicio'),
+    path('Adopciones/', views.Adopciones, name='Adopciones'),
+    path('Busquedas/', views.Busquedas, name='Busquedas'),
 ]
